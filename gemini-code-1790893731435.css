@@ -1,0 +1,35 @@
+:root {
+  --primary-green: #39FF88;
+  --bright-green: #52FF9A;
+  --light-green: #E8FFF1;
+  --mint: #B8FFD6;
+  --emerald: #18C875;
+  --dark-green: #0B3D24;
+  --white: #FFFFFF;
+  --text-dark: #10251A;
+}
+
+body {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E8FFF1 50%, #B8FFD6 100%);
+  color: var(--text-dark);
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-item {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.nav-item:hover {
+  background: #E8FFF1;
+  border-color: #39FF88;
+  box-shadow: 0 0 25px rgba(57, 255, 136, 0.35);
+}
+
+.nav-item.active {
+  background: #39FF88;
+  color: #0B3D24;
+  font-weight: bold;
+  border-color: #18C875;
+  box-shadow: 0 0 30px rgba(57, 255, 136, 0.5);
+}
